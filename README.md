@@ -3,7 +3,7 @@ Script and supporting files to get a meteor project started with templates.
 
 # Usage
 ```
-   ./create-meteor-project.sh ~/somenewproject
+   ./create-meteor-project.sh ~/somenewproject "My Great New Project"
    cd ~/somenewproject
    meteor
 ```

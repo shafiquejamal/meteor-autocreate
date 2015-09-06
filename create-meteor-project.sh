@@ -1,4 +1,5 @@
 FULL_PATH="$1"
+PROJECT_TITLE="$2"
 PATH_ONLY=${FULL_PATH%/*}
 PROJECT_NAME="${FULL_PATH##*/}"
 SCRIPT_PATH=$(pwd)
@@ -15,6 +16,7 @@ cd ${PROJECT_NAME}
 rm *.html
 rm *.js
 rm *.css
+find . -type f -name "*.html" | xargs perl -p -i -e "s#PROJECT_NAME#${PROJECT_TITLE}#g"
 meteor add iron:router
 meteor add twbs:bootstrap
 meteor add accounts-ui accounts-password
