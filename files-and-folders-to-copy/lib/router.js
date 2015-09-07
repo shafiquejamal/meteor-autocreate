@@ -7,4 +7,9 @@ Router.map(function(){
 		path: '/',
 		template: 'home'
 	});
+
+	this.route('checkemail', {
+        path: '/checkemail',
+        template: 'checkemail'
+    });
 });

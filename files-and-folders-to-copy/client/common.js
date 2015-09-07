@@ -1,6 +1,9 @@
 Meteor.startup(function () { 
 	AccountsEntry.config({
 		homeRoute: '/',
-		dashboardRoute: '/'
+		dashboardRoute: '/',
+        passwordSignupFields: 'USERNAME_AND_EMAIL',
+        signInAfterRegistration: false,  
+       	emailVerificationPendingRoute: '/checkemail'
 	});
 });

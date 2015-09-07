@@ -20,10 +20,16 @@ find . -type f -name "*.html" | xargs perl -p -i -e "s#PROJECT_NAME#${PROJECT_TI
 meteor add iron:router
 meteor add twbs:bootstrap
 meteor add accounts-ui accounts-password
-meteor add joshowens:accounts-entry
 meteor add aldeed:autoform
 meteor add aldeed:collection2
 meteor add ongoworks:security
+meteor add email 
 meteor remove insecure
 meteor remove autopublish
 git init
+mkdir packages
+cd packages
+git clone https://github.com/Differential/accounts-entry.git
+meteor add joshowens:accounts-entry
+cd ..
+
