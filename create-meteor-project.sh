@@ -24,10 +24,12 @@ meteor add aldeed:autoform
 meteor add aldeed:collection2
 meteor add ongoworks:security
 meteor add email 
+meteor add momentjs:moment
 meteor remove insecure
 meteor remove autopublish
 git init
 mkdir packages
+# https://forums.meteor.com/t/how-to-install-meteor-package-direct-from-github/1693
 cd packages
 git clone https://github.com/Differential/accounts-entry.git
 meteor add joshowens:accounts-entry

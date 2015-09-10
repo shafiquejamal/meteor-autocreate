@@ -1,15 +1,18 @@
 Router.configure({
-	layoutTemplate: 'layout'
+	layoutTemplate: 'layout',
+	loadingTemplate: 'loading',
+	notFoundTemplate: 'notFound'
 });
 
 Router.map(function(){
+	this.route('checkemail', {
+        path: '/checkemail',
+        template: 'checkemail'
+    });
+
 	this.route('home', {
 		path: '/',
 		template: 'home'
 	});
 
-	this.route('checkemail', {
-        path: '/checkemail',
-        template: 'checkemail'
-    });
 });
