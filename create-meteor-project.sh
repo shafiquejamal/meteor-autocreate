@@ -25,6 +25,10 @@ meteor add aldeed:collection2
 meteor add ongoworks:security
 meteor add email 
 meteor add momentjs:moment
+meteor add yogiben:admin
+meteor add fortawesome:fontawesome
+meteor add accounts-base
+meteor add dburles:collection-helper
 meteor remove insecure
 meteor remove autopublish
 git init
