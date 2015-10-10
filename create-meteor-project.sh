@@ -29,13 +29,18 @@ meteor add yogiben:admin
 meteor add fortawesome:fontawesome
 meteor add accounts-base
 meteor add dburles:collection-helper
+meteor add tsega:bootstrap3-datetimepicker@=3.1.3_3
+meteor add mrt:moment-timezone
+meteor add aldeed:autoform-bs-datetimepicker
+meteor add raix:handlebar-helpers
 meteor remove insecure
 meteor remove autopublish
 git init
 mkdir packages
 # https://forums.meteor.com/t/how-to-install-meteor-package-direct-from-github/1693
+# https://github.com/Differential/accounts-entry/issues/383
 cd packages
-git clone https://github.com/Differential/accounts-entry.git
-meteor add joshowens:accounts-entry
+git clone https://github.com/jakubbilko/accounts-entry
+meteor add joshowens:accounts-entry-1.2
 cd ..
 
