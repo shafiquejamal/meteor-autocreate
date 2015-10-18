@@ -33,6 +33,7 @@ meteor add tsega:bootstrap3-datetimepicker@=3.1.3_3
 meteor add mrt:moment-timezone
 meteor add aldeed:autoform-bs-datetimepicker
 meteor add raix:handlebar-helpers
+
 meteor remove insecure
 meteor remove autopublish
 git init
@@ -41,6 +42,7 @@ mkdir packages
 # https://github.com/Differential/accounts-entry/issues/383
 cd packages
 git clone https://github.com/jakubbilko/accounts-entry
-meteor add joshowens:accounts-entry-1.2
+cd ..
+meteor add joshowens:accounts-entry
 cd ..
 
