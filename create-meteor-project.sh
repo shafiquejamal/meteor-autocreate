@@ -42,6 +42,10 @@ mkdir packages
 # https://github.com/Differential/accounts-entry/issues/383
 cd packages
 git clone https://github.com/jakubbilko/accounts-entry
+cd accounts-entry
+rm -rf .git .gitignore
+perl -pi -e 's#https://github.com/Differential/accounts-entry#https://github.com/jakubbilko/accounts-entry#i' package.js
+cd ..
 cd ..
 meteor add joshowens:accounts-entry
 cd ..
